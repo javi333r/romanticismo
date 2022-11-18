@@ -1,0 +1,119 @@
+/* WEB DEL ROMANTICISMO           */
+/* HOJA DE ESTILO PARA INDEX.HTML */
+/* JAVIER BRAVO                   */
+/* VERSION: 1.0                   */
+/* 11 de noviembre de 2022        */
+ 
+/* ESTILO GENERAL                 */
+
+@font-face {
+    src: url('../FUENTES/BreakingBad.ttf');
+    font-family:"Breaking Bad";
+  }
+
+  @font-face {
+    src: url('../FUENTES/ANGEL\ FIRE.ttf');
+    font-family:"Angel Fire";
+  }
+
+  @font-face {
+    src: url('../FUENTES/WaterFire.otf');
+    font-family:"WaterFire";
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(156, 107, 107);
+    font-family: WaterFire;
+    margin: 0;
+    padding: 0;
+  }
+
+  #wrapper {
+    width:80%;
+    margin: auto;
+    background-color: white;
+  }
+
+/********************** HERO SECTION OPCION 1: FOTO + TEXTO **********/
+  #hero {
+    background-image: url('../IMAGENES/wanderer-above-the-sea-fog-friedrich.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 33%;
+    font-family: "Breaking Bad";
+    font-size: 4rem;
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+  #titulo {
+    background-color: rgba(255,255,255,0.5);
+    width: 35%;
+    padding: 2%;
+    text-align: center; 
+    border-radius: 50%;
+  }
+
+
+  /***** HERO 2: HAIKEI APP + POSITION *****/ 
+
+  #hero2{
+    background-image: url('../IMAGENES/low-poly-grid-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  #titulo2{
+    text-align: center;
+    font-family: "Angel Fire";
+    font-size: 4rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 30%;
+
+
+    position:absolute; /* SE FIJA DENTRO DEL HERO */
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    /* para el efecto frosted glass (fondo debe ser blanco
+        y  con opacidad por debajo de 0.5) */
+
+    backdrop-filter: blur(3px);
+  }
+
+  /***** HERO 3: COLOR LISO + GETWAVES *****/ 
+
+  #hero3 {
+    background-color: #e7008a;
+    height:40vh;
+  }
+
+  #titulo3 {
+    font-family: "Angel Fire";
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-150%);
+  }
+
+
+  /****************** MEDIA QUERY **********************/
+
+  @media only screen and (width <= 1000px){
+    #wrapper {width: 90%;}
+    #titulo {font-size: 3rem;
+              width: 45%;}
+  }
+
+  @media only screen and (width <= 600px){
+    #wrapper {width: 100%;}
+  }

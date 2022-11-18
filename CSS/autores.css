@@ -1,0 +1,70 @@
+/* WEB DEL ROMANTICISMO      */
+/* HOJA DE ESTILO DE AUTORES */
+/* JAVIER BRAVO              */
+/* VERSION: 1.0              */
+/* 21 de Octubre de 2022     */
+
+/* ESTILO GENERAL            */
+
+@font-face {
+    src: url('../FUENTES/BreakingBad.ttf');
+    font-family:"Breaking Bad";
+  }
+
+  @font-face {
+    src: url('../FUENTES/WaterFire.otf');
+    font-family:"WaterFire";
+  }
+
+
+*{
+  box-sizing: border-box;
+}
+
+body { 
+    margin:0;padding: 0;
+    text-indent: 3em;
+    font-family:"WaterFire";
+    padding: 4%; 
+    background-color: rgb(222, 201, 201);
+}
+
+#espronceda {
+  width: 25%;
+  float: left;
+  padding: 20 px;
+  margin: 10px;
+}
+
+#wrapper {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 4%;
+}
+
+h1, h2, h3 {
+    font-family:"Breaking Bad" ;
+    border-bottom: 3px solid black;
+    width: auto ;
+    margin: 20px auto;
+}
+
+p {
+  text-align: justify;
+}
+
+#limpiar {
+  clear: both;
+}
+
+/***** MEDIA QUERIES *****/
+
+@media only screen and (width<=850px){
+  #espronceda {width: 50%;}
+}
+
+@media only screen and (width<=500px){
+   #espronceda {width: 100%;}
+   #wrapper{width: 100%;}
+}
