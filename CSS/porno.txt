@@ -1,0 +1,46 @@
+$TTL	604800
+@	IN	SOA	DEBIAN-FJBRAVO.home root.DEBIAN-FJBRAVO. (
+			      1		
+			 604800		
+			  86400		
+			2419200	
+			 604800 )
+;
+@	IN	NS	ns1.gregorio.net.
+@	IN	NS	ns2.gregorio.net.
+@	IN	NS	ns3.gregorio.net.
+	IN	MX	10	mail1.gregorio.net.
+	IN	MX	20	mail2.gregorio.net.
+www	IN	A	192.168.1.10
+ftp	IN	A	192.168.1.20
+pene	IN	A	192.168.1.30
+ns1	IN	A	192.168.1.40
+ns2	IN	A	192.168.1.50
+ns3	IN	A	192.168.1.60
+mail1	IN	A	192.168.1.70
+mail2	IN	A	192.168.1.80
+
+
+
+$TTL	604800
+@	IN	SOA	DEBIAN-FJBRAVO.home root.DEBIAN-FJBRAVO. (
+			      1		
+			 604800		
+			  86400		
+			2419200	
+			 604800 )
+;
+@	IN	NS	ns1.
+@	IN	NS	ns2.
+@	IN	NS	ns3.
+mail1	IN	MX	10	mail1.gregorio.net.
+mail2	IN	MX	20	mail2.gregorio.net.
+10	IN	PTR	www.gregorio.net.
+20	IN	PTR	ftp.gregorio.net.
+30	IN	PTR	pene.gregorio.net.
+40	IN	PTR	ns1.gregorio.net.
+50	IN	PTR	ns2.gregorio.net.
+60	IN	PTR	ns3.gregorio.net.
+70	IN	PTR	mail1.gregorio.net.
+80	IN	PTR	mail2.gregorio.net.
+
